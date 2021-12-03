@@ -7,13 +7,36 @@ Very simple html tooltip with CSS and Javascript wihout lib.
 
 Insert toolstips.css and toolstips.js.
 
-exemple:
+demo.html:
 ```
-<script>
-	document.querySelectorAll("a").forEach(function (item) {
-		tooltips(item);
-	});
-</script>
+<html>
+
+<head>
+	<script src="src/tooltips.js"></script>
+	<link href="src/tooltips.css" rel="stylesheet" />
+
+	<style>
+		body {
+			padding-top: 150px;
+			text-align: center;
+		}
+	</style>
+
+</head>
+
+<body>
+
+	<a href="https://javlo.org" title="link to javlo website">javlo.org</a>
+
+	<script>
+		document.querySelectorAll("a").forEach(function (item) {
+			tooltips(item);
+		});
+	</script>
+
+</body>
+
+</html>
 ```
 
 ### Prerequisites
